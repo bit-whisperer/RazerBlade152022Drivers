@@ -12,4 +12,4 @@ MOU - Mouse
 KBD - Keyboard
 
 
-I will add more if I find any hiccups, but for now the rest of the drivers could be found on Windows Update. For now these are only the Razer proprietary developed drivers for the various devices on the computer (mouse, keyboard)
+I will add more if I find any hiccups, but for now the rest of the drivers could be found on Windows Update. These are only the Razer proprietary developed drivers for the various devices on the computer I could currently find.
