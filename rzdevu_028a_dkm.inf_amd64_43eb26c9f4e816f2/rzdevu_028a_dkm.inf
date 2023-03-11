@@ -1,0 +1,71 @@
+; Copyright: (c) 2021 Razer Inc. All rights reserved
+;
+; RzDevU_028a_Dkm.inf
+;
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = HIDClass
+ClassGuid   = {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Provider    = %ManufacturerName%
+CatalogFile = rzdev_028a_dkm.cat
+DriverVer = 12/03/2021,10.0.15063.0
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+RzDev_028a.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%RzDev.DeviceDesc%=RzDev_Device, USB\Vid_1532&Pid_028a&MI_01
+
+[RzDev_Device.NT]
+Include = input.inf
+Needs = HID_Inst.NT
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+RzDev_028a.sys
+
+[RzDev_Device.NT.HW]
+Include=input.inf
+Needs=HID_Inst.NT.HW
+AddReg = RzDev_Device.NT.HW.AddReg
+
+[RzDev_Device.NT.HW.AddReg]  
+HKR,,"LowerFilters",0x00010000,"RzDev_028a"
+HKR,,"DkmKeyDevice",0x00010001,1                ; DKM Type
+HKR,,"DkmMouseDevice",0x00010001,1              ; DKM Type
+HKR,,"Virtual_Con_028a",0x00010001,1            ; Consumer Control
+
+;-------------- Service installation
+[RzDev_Device.NT.Services]
+AddService = RzDev_028a,, RzDev_Service_Inst
+Include=input.inf
+Needs=HID_Inst.NT.Services
+
+; -------------- RzDev driver install sections
+[RzDev_Service_Inst]
+DisplayName    = %RzDev.ServiceDesc%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\RzDev_028a.sys
+
+[Strings]
+ManufacturerName="Razer Inc"
+DiskName = "Razer 028a Installation Disk"
+RzDev.ServiceDesc= "Razer 028a Service"
+RzDev.DeviceDesc = "Razer Blade"
