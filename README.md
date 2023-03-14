@@ -11,6 +11,8 @@ MOU - Mouse
 
 KBD - Keyboard
 
+The audio driver can be found here since github hates files larger than 25mb: https://mega.nz/folder/JKpg0CzR#Fpz_skNCHcIkMq6yx_AN-A
+
 Use this to add the audio driver to the driverstore and delete the old one: https://github.com/lostindark/DriverStoreExplorer/releases
 
 I was unable to find what the rest were for, but the three listed above were the ones I was successfully able to find and update.
