@@ -19,4 +19,23 @@ Use this to add the audio driver to the driverstore and delete the old one: http
 
 I was unable to find what the rest were for, but the three listed above were the ones I was successfully able to find and update.
 
-I will add more if I find any hiccups, but for now the rest of the drivers could be found on Windows Update. These are only the Razer proprietary developed drivers for the various devices on the computer I could currently find.
+# Other Tweaks
+
+You can add inertia scrolling on the trackpad back with a registry tweak.
+
+HKEY_CURRENT_USER/Software/Microsoft/Wisp/Touch
+
+In this directory, change "Friction" to 15 and log out and log back in.
+
+If it doesn't apply the first time, restart until it does. It took me two restarts to get it applied the first time.
+
+After that, it will be persistent after every startup.
+
+It may not work perfectly on 2% of programs, but at least it restores the functionality.
+
+If palm rejection is not working correctly on the trackpad, you can increase the aggressiveness of the palm rejection.
+
+HKEY_CURRENT_USER/Software/Microsoft/Windows/CurrentVersion/PrecisionTouchPad
+
+Look for the AAPThreshold key and then set the value from 2 to 3. 0 will disable palm rejection.
+
