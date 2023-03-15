@@ -11,7 +11,9 @@ MOU - Mouse
 
 KBD - Keyboard
 
-The audio driver can be found here since github hates files larger than 25mb: https://mega.nz/folder/JKpg0CzR#Fpz_skNCHcIkMq6yx_AN-A
+The audio driver can be pulled from windows update, but if it still cannot be found, the original older OEM version can be found here since github hates files larger than 25mb: https://mega.nz/folder/JKpg0CzR#Fpz_skNCHcIkMq6yx_AN-A
+
+If you are experiencing audio dropouts like I was, you have to remove the THX spatial audio extension. I put instructions on how to do that in the "To Fix Audio" directory.
 
 Use this to add the audio driver to the driverstore and delete the old one: https://github.com/lostindark/DriverStoreExplorer/releases
 
