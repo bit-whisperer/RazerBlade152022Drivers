@@ -2,7 +2,7 @@
 
 To fix the audio dropouts, you have to uninstall the THX Spatial Audio.
 
-First turn off automatic driver downloads through windows update. This can be done in Metro Settings -> System -> About -> Advanced System Settings -> Hardware -> Device Installation Settings -> No -> Ok
+First turn off automatic driver downloads through windows update. This can be done in Windows Settings App -> System -> About -> Advanced System Settings -> Hardware -> Device Installation Settings -> No -> Ok
 
 There are other ways to disable it too, just do a serch for "disable automatic driver downloads from windows update windows 10"
 
