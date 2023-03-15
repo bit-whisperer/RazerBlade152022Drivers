@@ -1,3 +1,5 @@
+# How to fix audio dropouts on the Razer Blade 15 2022
+
 To fix the audio dropouts, you have to uninstall the THX Spatial Audio.
 This can be done by using DriverStoreExplorer. https://github.com/lostindark/DriverStoreExplorer/releases
 
