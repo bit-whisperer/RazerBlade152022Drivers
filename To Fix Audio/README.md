@@ -5,7 +5,7 @@ This can be done by using DriverStoreExplorer. https://github.com/lostindark/Dri
 
 Delete any of the ones that say THX and then restart the computer.
 
-Next install EqualizerAPO. I made an EQ preset to get you started. Its in this folder.
+Next install EqualizerAPO. I made an EQ preset to get you started. It's in this folder.
 
 Apply it by overwriting the existing config in the EqualizerAPO\config directory and restart EqualizerAPO or your computer.
 
