@@ -1,4 +1,4 @@
-#Original OEM THX Audio Driver can be found here:
+# Original OEM THX Audio Driver can be found here:
 
 https://dl.razerzone.com/drivers/Razer Blade 15" (2022) | RZ09-0421x/THXAPO_2022-w9-rc2_v2.5.6.0-a222-i216_CH580-PI480-WU-app-fix_MSHLKSIGN.exe.zip
 
