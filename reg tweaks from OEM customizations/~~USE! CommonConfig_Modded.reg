@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+;=======================================
+; MISC NON-TEMPHIVE ( HKLM )
+;=======================================
+
+;(20210323_JerryHsieh) - Do not automatically enable BitLocker(Device Encryption)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker]
+"PreventDeviceEncryption"=dword:00000001
+
+
+;=======================================
+; BLADE REQUIREMENTS
+; 2021/11/17 change HorizontalOffset and SpaceBarOffset for CH580
+;=======================================
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"HorizontalOffset"=dword:00000B29
+"SpaceBarOffset"=dword:000002B2
+"HorizontalOffsetIsNeg"=dword:00000000

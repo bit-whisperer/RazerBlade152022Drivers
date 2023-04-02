@@ -1,0 +1,74 @@
+Windows Registry Editor Version 5.00
+
+;=======================================
+; MISC TEMPHIVE ( HKU )
+;=======================================
+; Touchpad fix
+[HKEY_LOCAL_MACHINE\Temphive\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"AAPThreshold"=dword:00000001
+
+; Set console color to green
+[HKEY_LOCAL_MACHINE\Temphive\Console]
+"ScreenColors"=dword:0000000a
+
+; Set console\command prompt color to green
+[HKEY_LOCAL_MACHINE\Temphive\Console\Command Prompt]
+"ScreenColors"=dword:0000000a
+
+; Tp bounce disable
+[HKEY_LOCAL_MACHINE\Temphive\SOFTWARE\Microsoft\Wisp\Touch]
+"Bouncing"=dword:00000000
+
+;(20191029_JerryHsieh) - Disable SCOOBE when user plug cable
+[HKEY_LOCAL_MACHINE\Temphive\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\Context\CloudExperienceHostIntent\Wireless]
+"ScoobeCheckCompleted"=dword:00000001
+
+;(20200512_JerryHsieh) - Change Slideshow timing to 10mins
+;[HKEY_LOCAL_MACHINE\Temphive\Control Panel\Personalization\Desktop Slideshow]
+;"Interval"=dword:000927c0
+
+;(20210517_JerryHsieh) - Change autoplay(Removable driver) setting to "Open folder to view files"
+[HKEY_LOCAL_MACHINE\Temphive\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\StorageOnArrival]
+@="MSOpenFolder"
+[HKEY_LOCAL_MACHINE\Temphive\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\StorageOnArrival]
+@="MSOpenFolder"
+
+
+;=======================================
+; MISC NON-TEMPHIVE ( HKLM )
+;=======================================
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"Persistence"=-
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\SQMClient\Windows] 
+"StudyId"=dword:000004df
+[HKEY_LOCAL_MACHINE\Software\Microsoft\SQMClient\Reliability] 
+"StudyId"=dword:000004df
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\OEM]
+"DeviceForm"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Razer]
+"System"="1"
+
+;(20220613_JerryHsieh) - Add Taskbar icon customization
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"LayoutXMLPath"="C:\\Windows\\OEM\\TaskbarLayoutModification.xml"
+
+;(20210323_JerryHsieh) - Do not automatically enable BitLocker(Device Encryption)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker]
+"PreventDeviceEncryption"=dword:00000001
+
+;(20210607_OreaLin) - Turn off fast startup
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+;"HiberbootEnabled"=dword:00000000
+
+
+;=======================================
+; BLADE REQUIREMENTS
+; 2021/11/17 change HorizontalOffset and SpaceBarOffset for CH580
+;=======================================
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"HorizontalOffset"=dword:00000B29
+"SpaceBarOffset"=dword:000002B2
+"HorizontalOffsetIsNeg"=dword:00000000
