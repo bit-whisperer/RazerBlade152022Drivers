@@ -18,3 +18,9 @@ If you are experiencing audio dropouts like I was, you have to remove the THX sp
 Use this to add the audio driver to the driverstore and delete the old one: https://github.com/lostindark/DriverStoreExplorer/releases
 
 I was unable to find what the rest were for, but the three listed above were the ones I was successfully able to find and update.
+
+# Trackpad Gestures Not Working after Sleep Fix
+
+See this razer zone thread: https://insider.razer.com/systems-14/touchpad-scrolling-not-smooth-razer-blade-17-2022-41416?postid=175194#post175194
+
+I created this fix and I can confirm that it works. If Razer addresses this with a BIOS update I will update this readme.
