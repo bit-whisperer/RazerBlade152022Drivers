@@ -21,6 +21,6 @@ I was unable to find what the rest were for, but the three listed above were the
 
 # Trackpad Gestures Not Working after Sleep Fix
 
-See this razer zone thread: https://insider.razer.com/systems-14/touchpad-scrolling-not-smooth-razer-blade-17-2022-41416?postid=175194#post175194
+See this razer insider post: https://insider.razer.com/systems-14/touchpad-scrolling-not-smooth-razer-blade-17-2022-41416?postid=175194#post175194
 
 I created this fix and I can confirm that it works. If Razer addresses this with a BIOS update I will update this readme.
