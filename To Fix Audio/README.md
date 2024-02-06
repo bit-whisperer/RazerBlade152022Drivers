@@ -20,4 +20,6 @@ Next install EqualizerAPO. I made an EQ preset to get you started. It's in this 
 
 Apply it by overwriting the existing config in the EqualizerAPO\config directory and restart EqualizerAPO or your computer.
 
+Protip: Add a step by pressing the green + and going to Control -> Device and selecting the Realtek speakers so it only applies to the speakers. Make sure the Device step is all the way at the top by dragging the number.
+
 Enjoy sound that does not have a dynamic range compressor applied to it.
