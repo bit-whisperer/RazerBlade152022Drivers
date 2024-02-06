@@ -24,3 +24,11 @@ I was unable to find what the rest were for, but the three listed above were the
 See this razer insider post: https://insider.razer.com/systems-14/touchpad-scrolling-not-smooth-razer-blade-17-2022-41416?postid=175194#post175194
 
 I created this fix and I can confirm that it works. If Razer addresses this with a BIOS update I will update this readme.
+
+# Trackpad jumpy tracking fix
+
+Big thanks to Nukley for this fix. This fix is derrived from https://github.com/Nukley/SynapticsUnfuckerator2
+
+Set the registry value Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad\AAPThreshold to 0. You will instantly feel the tracking be more responsive or less jumpy. If its still jumpy, clean the trackpad.
+
+
