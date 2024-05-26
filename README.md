@@ -29,8 +29,8 @@ Update May 2024 - Razer has finally addressed this in a firmware update. https:/
 
 # Trackpad jumpy tracking fix
 
-Big thanks to Nukley for this fix. This fix is derrived from https://github.com/Nukley/SynapticsUnfuckerator2
+This fix is derrived from https://github.com/Nukley/SynapticsUnfuckerator2
 
-Set the registry value Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad\AAPThreshold to 0. You will instantly feel the tracking be more responsive or less jumpy. If its still jumpy, clean the trackpad.
+Set the registry value Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad\AAPThreshold to 1. You will instantly feel the tracking be more responsive or less jumpy. If its still jumpy, clean the trackpad.
 
 
