@@ -25,6 +25,8 @@ See this razer insider post: https://insider.razer.com/systems-14/touchpad-scrol
 
 I created this fix and I can confirm that it works. If Razer addresses this with a BIOS update I will update this readme.
 
+Update May 2024 - Razer has finally addressed this in a firmware update. https://mysupport.razer.com/app/answers/detail/a_id/9729
+
 # Trackpad jumpy tracking fix
 
 Big thanks to Nukley for this fix. This fix is derrived from https://github.com/Nukley/SynapticsUnfuckerator2
